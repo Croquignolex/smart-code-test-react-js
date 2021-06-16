@@ -1,7 +1,21 @@
 {
-  "name": "app",
+  "title": "SCTRJ",
+  "name": "smart-code-test-react-js",
+  "description": "Simple test for smart code",
+  "keywords": [
+    "smart",
+    "code",
+    "test",
+    "react"
+  ],
+  "license": "MIT",
+  "author": "Croquignolex",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Croquignolex/gie-gltm-web-react-js.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
