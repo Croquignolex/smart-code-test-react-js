@@ -9,10 +9,12 @@ const NavBarComponent = () => {
                     <ul className="navbar-nav ml-auto mr-auto">
                         {/* Home */}
                         <li className="nav-item">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="nav-link" href="#">Home</a>
                         </li>
                         {/* Blog */}
                         <li className="nav-item dropdown">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
                                 Blog
                                 <i className="fa fa-angle-down" />
@@ -28,6 +30,7 @@ const NavBarComponent = () => {
                         </li>
                         {/* Posts */}
                         <li className="nav-item dropdown">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
                                 Posts Features
                                 <i className="fa fa-angle-down" />
@@ -49,6 +52,7 @@ const NavBarComponent = () => {
                         </li>
                         {/* Pages */}
                         <li className="nav-item dropdown">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
                                 Pages
                                 <i className="fa fa-angle-down" />
@@ -67,6 +71,7 @@ const NavBarComponent = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="nav-link" href="#"> Contact </a>
                         </li>
                     </ul>

@@ -9,10 +9,13 @@ const FooterComponent = () => {
                         <div className="copyright">
                             <p>
                                 © Copyright 2021
-                                <a href="https://croquignolex.mboacutz.com/" target="_blank">Croquignolex</a>,
+                                <a href="https://croquignolex.mboacutz.com/" target="_blank" rel="noreferrer">
+                                    Croquignolex
+                                </a>,
                                 All rights reserved.</p>
                         </div>
                         <div className="back">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a href="#" className="back-top">
                                 <i className="fa fa-arrow-up" />
                             </a>

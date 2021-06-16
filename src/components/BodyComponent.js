@@ -35,8 +35,8 @@ const BodyComponent = () => {
                             <ul className="list-inline">
                                 {pages.map((page, key) => (
                                         <li className={`${page.active && 'active'} page`} key={key}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid,no-script-url */}
-                                            <a href="javascript: void(0)" onClick={() => setActivePage(page.label)}>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                            <a href="#" onClick={() => setActivePage(page.label)}>
                                                 {page.label.toString()}
                                             </a>
                                         </li>
