@@ -48,7 +48,7 @@
     })
 
 
-    function callApiAtPage(page) {
+    /*function callApiAtPage(page) {
         const URL = "https://newsapi.org/v2/top-headlines?country=us&sortBy=popularity&apiKey=f9d5eff2ef4c4575808e4546ecfd3519&page=" + page;
 
         // API Handling
@@ -86,6 +86,6 @@
         })
 
         return stringBuilder;
-    }
+    }*/
 })(jQuery);
 
