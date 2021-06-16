@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TopFooterComponent() {
+const TopFooterComponent = () => {
     return (
         <section className="newslettre">
             <div className="container-fluid">
