@@ -1,8 +1,12 @@
 import React from 'react';
 
+import FooterComponent from "../components/FooterComponent";
+
 function HomePage() {
     return (
-         <>Home page</>
+         <>
+             <FooterComponent />
+         </>
     );
 }
 
