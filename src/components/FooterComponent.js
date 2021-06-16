@@ -1,6 +1,6 @@
 import React from 'react';
 
-function HomePage() {
+function FooterComponent() {
     return (
         <footer className="footer">
             <div className="container-fluid">
@@ -24,4 +24,4 @@ function HomePage() {
     );
 }
 
-export default React.memo(HomePage);
+export default React.memo(FooterComponent);
