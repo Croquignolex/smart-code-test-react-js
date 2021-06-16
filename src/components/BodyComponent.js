@@ -2,8 +2,8 @@ import React from 'react';
 
 import LoaderComponent from "./LoaderComponent";
 import ArticleComponent from "./ArticleComponent";
-import ArticlesService from "../services/ArticlesService";
 import ErrorAlertComponent from "./ErrorAlertComponent";
+import ArticlesService from "../services/ArticlesService";
 
 const BodyComponent = () => {
 
