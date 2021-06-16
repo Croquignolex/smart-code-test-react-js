@@ -2,6 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 
+import author from "../assets/img/author.png";
+
 const ArticleComponent = ({article}) => {
     return (
         <div className="card">
@@ -19,7 +21,7 @@ const ArticleComponent = ({article}) => {
                     </a>
                     <h5>
                         <a href={article.url}>
-                            ${article.title}
+                            {article.title}
                         </a>
                     </h5>
                     <p>
@@ -30,7 +32,7 @@ const ArticleComponent = ({article}) => {
                             <li>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a href="#">
-                                    <img src={require('../assets/img/author.png')} alt="" />
+                                    <img src={author} alt="" />
                                 </a>
                             </li>
                             <li>

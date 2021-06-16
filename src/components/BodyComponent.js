@@ -7,7 +7,7 @@ import ArticlesService from "../services/ArticlesService";
 
 const BodyComponent = () => {
 
-    const {articles, error, loader} = ArticlesService();
+    const {articles, error, loader, pages, setActivePage} = ArticlesService();
 
     return (
         <section className="section masonry-layout pt-45">
@@ -21,21 +21,27 @@ const BodyComponent = () => {
                             ? <LoaderComponent />
                             : (
                                 <div className="card-columns">
-                                    {articles.map(article => <ArticleComponent article={article} />)}
+                                    {articles.map((article, key) => (
+                                            <div key={key}>
+                                                <ArticleComponent article={article} />
+                                            </div>
+                                        )
+                                    )}
                                 </div>
                             )
                         }
                         {/* Start Pagination */}
                         <div className="pagination mt-30">
                             <ul className="list-inline">
-                                <li className="active page" data-page="1">
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a href="#">1</a>
-                                </li>
-                                <li className="page" data-page="2">
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a href="#">2</a>
-                                </li>
+                                {pages.map((page, key) => (
+                                        <li className={`${page.active && 'active'} page`} key={key}>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid,no-script-url */}
+                                            <a href="javascript: void(0)" onClick={() => setActivePage(page.label)}>
+                                                {page.label.toString()}
+                                            </a>
+                                        </li>
+                                    ))
+                                }
                             </ul>
                         </div>
                         {/* End Pagination */}
