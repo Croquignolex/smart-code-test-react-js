@@ -13,7 +13,7 @@ const ArticlesService = () => {
         setLoader(true);
         setError({status: false, message: ''});
         // API call
-        /*apiGetRequest(API_URL)
+        apiGetRequest(API_URL)
             .then(data => {
                 // Fill data, hide loader and error message
                 setArticles(data.articles);
@@ -25,7 +25,7 @@ const ArticlesService = () => {
                 setArticles([]);
                 setLoader(false);
                 setError({status: true, message});
-            });*/
+            });
         // eslint-disable-next-line
     }, []);
 
